@@ -1,0 +1,7 @@
+{
+  "name": "angular2-typescript-jspm-systemjs-router-seed",
+  "description": "Angular2 Router jspm SystemJS seed",
+  "repository": "https://github.com/KamilLelonek/angular2-typescript-jspm-systemjs-router-seed",
+  "logo": "https://angular.io/resources/images/logos/standard/shield-large@2x.png",
+  "keywords": ["node", "express", "angular2", "jspm", "systemjs"]
+}

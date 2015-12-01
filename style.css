@@ -1,0 +1,33 @@
+@keyframes spinner {
+  to {transform: rotate(360deg);}
+}
+
+@-webkit-keyframes spinner {
+  to {-webkit-transform: rotate(360deg);}
+}
+
+.spinner {
+  min-width:  50px;
+  min-height: 50px;
+}
+
+.spinner:before {
+  content:     'Loading…';
+  position:    absolute;
+  top:         50%;
+  left:        50%;
+  width:       60px;
+  height:      60px;
+  margin-top:  -10px;
+  margin-left: -10px;
+}
+
+.spinner:not(:required):before {
+  content:             '';
+  border-radius:       50%;
+  border:              5px solid transparent;
+  border-top-color:    #03ade0;
+  border-bottom-color: #03ade0;
+  animation:           spinner .8s ease infinite;
+  -webkit-animation:   spinner .8s ease infinite;
+}

@@ -1,0 +1,28 @@
+{
+  "scripts": {
+    "start": "node --es_staging server.js",
+    "dev-server": "live-server",
+    "postinstall": "./heroku.sh",
+    "bundle": "jspm bundle 'bootstrap.js' --inject --minify",
+    "unbundle": "jspm unbundle"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "jspm": {
+    "dependencies": {
+      "angular2": "npm:angular2@^2.0.0-alpha.46",
+      "reflect-metadata": "npm:reflect-metadata@^0.1.2",
+      "zone.js": "npm:zone.js@^0.5.8"
+    },
+    "devDependencies": {
+      "typescript": "npm:typescript@^1.6.2"
+    }
+  },
+  "devDependencies": {
+    "live-server": "^0.8.2"
+  },
+  "dependencies": {
+    "express": "^4.13.3",
+    "jspm": "^0.16.15"
+  }
+}
